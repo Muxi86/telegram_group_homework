@@ -9,6 +9,7 @@ def find_all_users_id(data: dict)->list:
     Returns:
         list: List containing all the users id
     """
+
     messages = data['messages']
     id = []
     for msg in messages:
@@ -17,5 +18,4 @@ def find_all_users_id(data: dict)->list:
     return id
 
 data = read_data('data/result.json')
-
 print(find_all_users_id(data))
